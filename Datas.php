@@ -52,7 +52,7 @@ class Datas {
         $stmt = "SELECT films.id FROM films
         JOIN genre_assoc ON films.id = genre_assoc.films_id 
         JOIN genre ON genre_assoc.genre_id = genre.id 
-        WHERE genre_assoc.genre_id IN ('genre.id')";
+        WHERE genre_assoc.genre_id IN (genre.id)";
 
         
         
